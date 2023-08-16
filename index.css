@@ -1,0 +1,157 @@
+.encabezado {
+    display: flex;
+    background-color: wheat;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    display: flex;
+    padding: 10px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 40px;
+    margin: 0px;
+}
+
+.filtros {
+    display: flex;
+    justify-content: right;
+    margin: 10px;
+    padding: 10px;
+    
+}
+ .filtros button {
+    background-color: antiquewhite;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 1px;
+    transition: transform 0.3s;
+ }
+
+.filtros button:hover {
+    transform: scale(1.1);
+    box-shadow: 8px 0px 12px rgba(0, 0, 0, 0.4);
+
+}
+
+/* Media query para pantallas pequeñas (hasta 350px) */
+@media (max-width: 580px) {
+    .filtros {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filtros button {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+
+.contenedor {
+    margin: 10px;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,1fr);
+    min-width: 230px;
+    max-width: 1200px;
+    justify-content: center;
+
+}
+
+/* Media query para tabletas (768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .contenedor {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Media query para dispositivos móviles (hasta 767px) */
+@media (min-width: 500px) and (max-width: 767px) {
+    .contenedor {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .contenedor {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+.caja {
+    border: 3px solid peru;
+    border-radius: 17px;
+    padding: 10px;
+    margin: 10px;
+    max-width: 100%; 
+    box-sizing: border-box;
+    box-shadow: 0 6px 8px rgba(7, 7, 7, 0.1);
+
+}
+
+.caja:hover {
+    box-shadow: 8px 0px 12px rgba(0, 0, 0, 0.4);
+}
+
+
+.caja img {
+    width: 100%; /* Ajustar la imagen al ancho de la tarjeta */
+    height: auto; 
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.caja:hover img {
+    transform: scale(1.1); 
+    filter: grayscale(100%);
+    border-radius: 17px;
+}
+.caja h2 {
+    font-size: 20px;
+
+}
+
+.caja p {
+    font-size: 15px
+}
+
+
+.paginado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.paginado p {
+    font-size: 17px;
+    
+}
+
+.botonespagina{
+    display: flex;
+    justify-content: center;
+}
+
+.botonespagina button {
+    background-color: antiquewhite;
+    margin: 1px;
+    border-radius: 3px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    height: 150px;
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
