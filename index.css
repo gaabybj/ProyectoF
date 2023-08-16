@@ -35,7 +35,6 @@ h1 {
 
 }
 
-/* Media query para pantallas pequeñas (hasta 350px) */
 @media (max-width: 580px) {
     .filtros {
         flex-direction: column;
@@ -65,14 +64,14 @@ p {
 
 }
 
-/* Media query para tabletas (768px - 1024px) */
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .contenedor {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
-/* Media query para dispositivos móviles (hasta 767px) */
+
 @media (min-width: 500px) and (max-width: 767px) {
     .contenedor {
         grid-template-columns: repeat(2, 1fr);
@@ -94,7 +93,6 @@ p {
     max-width: 100%; 
     box-sizing: border-box;
     box-shadow: 0 6px 8px rgba(7, 7, 7, 0.1);
-
 }
 
 .caja:hover {
