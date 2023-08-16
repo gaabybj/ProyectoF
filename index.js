@@ -106,7 +106,7 @@ usarFetch(pagina);
 
 // paginado
 function actualizarPaginaActual() {
-    $paginaactual.textContent = `Página Actual: ${pagina}`;
+    $paginaactual.innerHTML = `Página Actual: ${pagina}`;
 }
 
 function siguientePagina () {
